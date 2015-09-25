@@ -13,6 +13,7 @@ public void onloadmethod(){
      String aid =System.currentPageReference().getParameters().get('id');
      accountRec = [Select Id,OwnerId,Name,Type,Phone,Website from Account where Id=:aid]; 
      allContactList = [Select Id,FirstName,LastName,Email from Contact where AccountId=:accountRec.Id];
+system.debug('Hello');
 }
 //Send the list of contacts to the visualforce page
 public List<Contact> getContacts(){
