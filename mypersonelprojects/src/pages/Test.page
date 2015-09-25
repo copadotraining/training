@@ -1,6 +1,6 @@
 <apex:page standardController="Account">
 <apex:pageBlock title="Hello {!$User.FirstName}!">
-You are displaying contacts from the {!account.name} account.
+You are displaying contacts from the {!account.name} account hello.
 Click a contact's name to view his or her details.
 </apex:pageBlock>
 <apex:pageBlock title="Contacts">
